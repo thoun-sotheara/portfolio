@@ -40,7 +40,7 @@ function ScrollCue() {
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 1.6, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-      className="absolute bottom-10 left-1/2 flex -translate-x-1/2 flex-col items-center gap-2"
+      className="absolute bottom-8 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-2 sm:flex"
     >
       <span className="label-text text-ink-tertiary">Scroll</span>
       <div className="flex h-8 w-5 items-start justify-center rounded-full border border-white/[0.12] p-1">
@@ -71,7 +71,7 @@ export function Hero() {
     <section
       ref={containerRef}
       id="home"
-      className="relative flex min-h-[100svh] flex-col items-center justify-center overflow-hidden px-6 lg:px-12"
+      className="relative flex min-h-[100svh] flex-col items-center justify-center overflow-hidden px-6 pb-16 pt-28 sm:pb-20 sm:pt-32 lg:px-12"
     >
       <motion.div
         style={{ y: headlineY, opacity }}
@@ -154,17 +154,17 @@ export function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.2, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-        className="absolute bottom-20 right-6 lg:right-12"
+        className="mt-8 w-full sm:absolute sm:bottom-20 sm:right-6 sm:mt-0 sm:w-auto lg:right-12"
       >
-        <div className="glass rounded-2xl p-5">
-          <div className="grid grid-cols-3 gap-6">
+        <div className="glass rounded-2xl p-4 sm:p-5">
+          <div className="grid grid-cols-3 gap-3 sm:gap-6">
             {[
               { value: "6+", label: "Years building" },
               { value: "30+", label: "Projects shipped" },
               { value: "5", label: "Live SaaS products" },
             ].map((stat) => (
               <div key={stat.label} className="flex flex-col gap-0.5">
-                <span className="text-xl font-semibold text-ink-primary">
+                <span className="text-lg font-semibold text-ink-primary sm:text-xl">
                   {stat.value}
                 </span>
                 <span className="label-text text-ink-tertiary">{stat.label}</span>
