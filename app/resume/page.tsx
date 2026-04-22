@@ -31,8 +31,8 @@ export default async function ResumePage({
         </div>
 
         <section className="resume-card-print overflow-hidden rounded-[28px] border border-black/5 bg-white shadow-[0_24px_80px_rgba(15,23,42,0.08)]">
-          <div className="border-b border-slate-200 px-8 py-8 lg:px-10">
-            <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+          <div className="resume-header-print border-b border-slate-200 px-8 py-8 lg:px-10">
+            <div className="resume-header-inner flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
               <div>
                 <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
                   {PORTFOLIO.role}
