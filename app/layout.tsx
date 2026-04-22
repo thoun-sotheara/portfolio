@@ -18,6 +18,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Sotheara Thoun — Full-Stack Developer & Problem Solver",
   description: PORTFOLIO.description,
+  alternates: {
+    canonical: PORTFOLIO.siteUrl,
+  },
   keywords: [
     "Sotheara Thoun",
     "Full-stack Developer",
