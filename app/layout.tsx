@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Sotheara Thoun — Full-Stack Developer",
     description: "6+ years, 30+ projects, 5 live SaaS products",
-    images: [PORTFOLIO.ogImage.replace("opengraph", "twitter")],
+    images: [PORTFOLIO.ogImage],
   },
 };
 

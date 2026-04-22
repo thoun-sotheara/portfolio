@@ -25,7 +25,7 @@ export const PORTFOLIO = {
   // SEO & Metadata
   siteUrl: "https://sotheara-portfolio.vercel.app",
   description: "Full-stack engineer specializing in SaaS and e-commerce platforms. 6+ years delivering performant, reliable product systems and scalable frontend architecture.",
-  ogImage: "/opengraph-image",
+  ogImage: "/images/screenshots/og-image.png",
   
   // Image Paths (replace with actual paths after uploading)
   portraitImage: "/images/portrait.png", // Upload to public/images/
