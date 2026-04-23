@@ -120,33 +120,35 @@ body {
 @media print {
   @page {
     size: A4;
-    margin: 14mm;
+    margin: 10mm;
   }
 
   html,
   body {
-    background: #ffffff !important;
-    color: #1a1a1a !important;
+    background: #f6f7f9 !important;
+    color: #0f172a !important;
     font-size: 10pt;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 
   body {
     overflow: visible;
   }
 
-  main {
-    background: #ffffff !important;
-    color: #1a1a1a !important;
-    padding: 0 !important;
+  .resume-print-page {
+    background: #f6f7f9 !important;
     min-height: unset !important;
   }
 
-  .resume-sheet,
-  .resume-sheet * {
-    color: inherit !important;
-    box-shadow: none !important;
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
+  .resume-print-frame {
+    max-width: 190mm !important;
+    margin: 0 auto !important;
+    gap: 0 !important;
+  }
+
+  .resume-print-frame > section {
+    max-width: 100% !important;
   }
 
   .resume-no-print {
@@ -154,11 +156,20 @@ body {
   }
 
   .resume-sheet {
-    border: none !important;
-    border-radius: 0 !important;
+    border-color: rgba(148, 163, 184, 0.35) !important;
     background: #ffffff !important;
     overflow: visible !important;
-    padding: 0 !important;
+  }
+
+  .resume-sheet,
+  .resume-sheet * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .resume-sheet article {
+    break-inside: avoid;
+    page-break-inside: avoid;
   }
 
   .resume-block-break {
@@ -166,16 +177,8 @@ body {
     page-break-inside: avoid;
   }
 
-  .resume-sheet h2 {
-    font-size: 22pt !important;
-    line-height: 1.15 !important;
-  }
-
-  .resume-sheet h3 {
-    font-size: 16pt !important;
-  }
-
-  .resume-sheet h4 {
-    font-size: 12pt !important;
+  /* Browser print headers/footers (date/title/url) are controlled by the print dialog. */
+  .resume-sheet [class*="shadow-"] {
+    box-shadow: none !important;
   }
 }

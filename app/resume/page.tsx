@@ -17,8 +17,8 @@ export default async function ResumePage({
   const autoPrint = params.download === "1";
 
   return (
-    <main className="min-h-screen bg-[#f6f7f9] px-4 py-8 sm:px-6 lg:px-10">
-      <div className="mx-auto max-w-[1080px] space-y-6">
+    <main className="resume-print-page min-h-screen bg-[#f6f7f9] px-4 py-8 sm:px-6 lg:px-10">
+      <div className="resume-print-frame mx-auto max-w-[1080px] space-y-6">
         <div className="resume-no-print flex items-center justify-between gap-4 rounded-2xl border border-black/10 bg-white px-6 py-4 shadow-[0_14px_40px_rgba(0,0,0,0.05)]">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-neutral-500">
