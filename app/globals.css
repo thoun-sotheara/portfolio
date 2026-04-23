@@ -120,7 +120,7 @@ body {
 @media print {
   @page {
     size: A4;
-    margin: 10mm;
+    margin: 0;
   }
 
   html,
@@ -139,10 +139,11 @@ body {
   .resume-print-page {
     background: #f6f7f9 !important;
     min-height: unset !important;
+    padding: 10mm !important;
   }
 
   .resume-print-frame {
-    max-width: 190mm !important;
+    max-width: 100% !important;
     margin: 0 auto !important;
     gap: 0 !important;
   }
