@@ -139,7 +139,7 @@ body {
   .resume-print-page {
     background: #f6f7f9 !important;
     min-height: unset !important;
-    padding: 10mm !important;
+    padding: 6mm !important;
   }
 
   .resume-print-frame {
@@ -161,6 +161,56 @@ body {
     background: #ffffff !important;
     overflow: visible !important;
     border-radius: 1rem !important;
+  }
+
+  /* Keep the on-screen design but compact the print density to fit one A4 page. */
+  .resume-layout-grid {
+    grid-template-columns: 30% 70% !important;
+  }
+
+  .resume-sidebar {
+    padding: 0.8rem 0.9rem !important;
+  }
+
+  .resume-main {
+    padding: 0.8rem 1rem !important;
+  }
+
+  .resume-header {
+    padding-bottom: 0.7rem !important;
+  }
+
+  .resume-main h1 {
+    font-size: 2rem !important;
+    line-height: 1.08 !important;
+  }
+
+  .resume-main p,
+  .resume-main li {
+    font-size: 12px !important;
+    line-height: 1.45 !important;
+  }
+
+  .resume-section {
+    padding-top: 0.7rem !important;
+    padding-bottom: 0.7rem !important;
+  }
+
+  .resume-section h2 {
+    font-size: 1.75rem !important;
+  }
+
+  .resume-section h3 {
+    font-size: 1.1rem !important;
+  }
+
+  .resume-section h4 {
+    font-size: 0.98rem !important;
+  }
+
+  .resume-philosophy {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
   }
 
   .resume-sheet,

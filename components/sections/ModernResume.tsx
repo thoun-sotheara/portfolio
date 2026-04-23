@@ -62,8 +62,8 @@ export function ModernResume() {
   return (
     <section className="mx-auto w-full max-w-[1080px] bg-white text-slate-900 print:max-w-none">
       <article className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-[0_22px_55px_rgba(15,23,42,0.06)] print:rounded-none print:shadow-none">
-        <div className="grid grid-cols-1 print:grid-cols-[30%_70%] md:grid-cols-[30%_70%]">
-          <aside className="border-b border-slate-200 bg-[#F9FAFB] px-6 py-8 print:border-b-0 print:border-r md:border-b-0 md:border-r">
+        <div className="resume-layout-grid grid grid-cols-1 print:grid-cols-[30%_70%] md:grid-cols-[30%_70%]">
+          <aside className="resume-sidebar border-b border-slate-200 bg-[#F9FAFB] px-6 py-8 print:border-b-0 print:border-r md:border-b-0 md:border-r">
             <div className="mx-auto w-fit">
               <div className="relative h-28 w-28 overflow-hidden rounded-full border border-slate-300">
                 <Image
@@ -152,8 +152,8 @@ export function ModernResume() {
             </div>
           </aside>
 
-          <div className="px-7 py-8 print:px-8 sm:px-10">
-            <header className="border-b border-slate-200 pb-6">
+          <div className="resume-main px-7 py-8 print:px-8 sm:px-10">
+            <header className="resume-header border-b border-slate-200 pb-6">
               <h1 className="text-[32px] font-bold uppercase tracking-[0.06em] text-slate-900 sm:text-[36px]">
                 Thoun Sotheara
               </h1>
@@ -165,7 +165,7 @@ export function ModernResume() {
               </p>
             </header>
 
-            <section className="border-b border-slate-200 py-6">
+            <section className="resume-section border-b border-slate-200 py-6">
               <h2 className="text-[18px] font-semibold text-slate-900">Experience</h2>
 
               <div className="relative mt-4 space-y-6 pl-6 before:absolute before:bottom-0 before:left-1.5 before:top-0 before:w-px before:bg-slate-300">
@@ -188,7 +188,7 @@ export function ModernResume() {
               </div>
             </section>
 
-            <section className="border-b border-slate-200 py-6">
+            <section className="resume-section border-b border-slate-200 py-6">
               <h2 className="text-[18px] font-semibold text-slate-900">Key Projects</h2>
 
               <div className="mt-4 grid grid-cols-1 gap-4">
@@ -207,7 +207,7 @@ export function ModernResume() {
               </div>
             </section>
 
-            <section className="pt-6">
+            <section className="resume-section resume-philosophy pt-6">
               <h2 className="text-[18px] font-semibold text-slate-900">Philosophy</h2>
               <p className="mt-3 text-[14px] leading-7 text-slate-700">
                 I approach product engineering as a balance between system depth and
