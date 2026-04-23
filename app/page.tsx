@@ -203,7 +203,7 @@ function Footer() {
           Framer Motion
         </span>
         <span className="label-text text-ink-tertiary">
-          Designed & developed by Sotheara
+          Designed & developed by Sotheara · Updated Apr 23, 2026
         </span>
       </div>
     </footer>
