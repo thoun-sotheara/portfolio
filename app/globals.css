@@ -160,6 +160,7 @@ body {
     border-color: rgba(148, 163, 184, 0.35) !important;
     background: #ffffff !important;
     overflow: visible !important;
+    border-radius: 1rem !important;
   }
 
   .resume-sheet,
@@ -178,7 +179,6 @@ body {
     page-break-inside: avoid;
   }
 
-  /* Browser print headers/footers (date/title/url) are controlled by the print dialog. */
   .resume-sheet [class*="shadow-"] {
     box-shadow: none !important;
   }

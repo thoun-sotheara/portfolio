@@ -62,8 +62,8 @@ export function ModernResume() {
   return (
     <section className="mx-auto w-full max-w-[1080px] bg-white text-slate-900 print:max-w-none">
       <article className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-[0_22px_55px_rgba(15,23,42,0.06)] print:rounded-none print:shadow-none">
-        <div className="grid grid-cols-1 md:grid-cols-[30%_70%]">
-          <aside className="border-b border-slate-200 bg-[#F9FAFB] px-6 py-8 md:border-b-0 md:border-r print:bg-white">
+        <div className="grid grid-cols-1 print:grid-cols-[30%_70%] md:grid-cols-[30%_70%]">
+          <aside className="border-b border-slate-200 bg-[#F9FAFB] px-6 py-8 print:border-b-0 print:border-r md:border-b-0 md:border-r">
             <div className="mx-auto w-fit">
               <div className="relative h-28 w-28 overflow-hidden rounded-full border border-slate-300">
                 <Image
@@ -152,7 +152,7 @@ export function ModernResume() {
             </div>
           </aside>
 
-          <div className="px-7 py-8 sm:px-10">
+          <div className="px-7 py-8 print:px-8 sm:px-10">
             <header className="border-b border-slate-200 pb-6">
               <h1 className="text-[32px] font-bold uppercase tracking-[0.06em] text-slate-900 sm:text-[36px]">
                 Thoun Sotheara
