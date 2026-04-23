@@ -18,6 +18,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Sotheara Thoun — Full-Stack Developer & Problem Solver",
   description: PORTFOLIO.description,
+  manifest: "/manifest.webmanifest",
   applicationName: "Sotheara Portfolio",
   category: "technology",
   authors: [{ name: "Sotheara Thoun", url: PORTFOLIO.siteUrl }],
@@ -80,37 +81,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    name: "Sotheara Thoun",
-    alternateName: "Thoun Sotheara",
-    jobTitle: "Full-Stack Developer",
-    url: PORTFOLIO.siteUrl,
-    image: `${PORTFOLIO.siteUrl}${PORTFOLIO.ogImage}`,
-    email: `mailto:${PORTFOLIO.email}`,
-    sameAs: [PORTFOLIO.github, PORTFOLIO.facebook],
-    description: PORTFOLIO.description,
-    knowsAbout: [
-      "Next.js",
-      "React",
-      "TypeScript",
-      "Node.js",
-      "SaaS Architecture",
-      "E-commerce Systems",
-    ],
-  };
-
   return (
     <html lang="en" className="dark scroll-smooth">
       <body
         className={`${geistSans.variable} ${geistMono.variable} bg-void antialiased`}
       >
-        <script
-          type="application/ld+json"
-          // Structured data improves rich search understanding for profile pages.
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-        />
         {children}
       </body>
     </html>

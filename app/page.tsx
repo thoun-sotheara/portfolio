@@ -13,6 +13,37 @@ import { Process } from "@/components/sections/Process";
 import { ContactForm } from "@/components/ui/ContactForm";
 import { motion } from "framer-motion";
 import { ArrowUp } from "lucide-react";
+import { PORTFOLIO } from "@/lib/portfolio-data";
+
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Sotheara Thoun",
+  alternateName: "Thoun Sotheara",
+  jobTitle: "Full-Stack Developer",
+  url: PORTFOLIO.siteUrl,
+  image: `${PORTFOLIO.siteUrl}${PORTFOLIO.ogImage}`,
+  email: `mailto:${PORTFOLIO.email}`,
+  sameAs: [PORTFOLIO.github, PORTFOLIO.facebook],
+  description: PORTFOLIO.description,
+  knowsAbout: [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Node.js",
+    "SaaS Architecture",
+    "E-commerce Systems",
+  ],
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Sotheara Portfolio",
+  url: PORTFOLIO.siteUrl,
+  inLanguage: "en-US",
+  description: PORTFOLIO.description,
+};
 
 // ─── Nav ──────────────────────────────────────────────────────────────────────
 
@@ -212,19 +243,29 @@ function ScrollToTopButton() {
 
 export default function Home() {
   return (
-    <CinematicBackground>
-      <Nav />
-      <main>
-        <Hero />
-        <About />
-        <FeaturedWork />
-        <TechnicalDeepDive />
-        <Lab />
-        <TechStack />
-        <Process />
-      </main>
-      <Footer />
-      <ScrollToTopButton />
-    </CinematicBackground>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+      />
+      <CinematicBackground>
+        <Nav />
+        <main>
+          <Hero />
+          <About />
+          <FeaturedWork />
+          <TechnicalDeepDive />
+          <Lab />
+          <TechStack />
+          <Process />
+        </main>
+        <Footer />
+        <ScrollToTopButton />
+      </CinematicBackground>
+    </>
   );
 }
