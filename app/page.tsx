@@ -7,7 +7,7 @@ import { Hero } from "@/components/sections/Hero";
 import { About } from "@/components/sections/About";
 import { Services } from "@/components/sections/Services";
 import { FeaturedWork } from "@/components/sections/FeaturedWork";
-import { TechnicalDeepDive } from "@/components/sections/TechnicalDeepDive";
+import { BusinessMetrics } from "@/components/sections/BusinessMetrics";
 import { Lab } from "@/components/sections/Lab";
 import { TechStack } from "@/components/sections/TechStack";
 import { Process } from "@/components/sections/Process";
@@ -97,7 +97,6 @@ function Nav() {
             ["About", "#about"],
             ["Services", "#services"],
             ["Work", "#work"],
-            ["Deep Dive", "#deep-dive"],
             ["Lab", "#lab"],
             ["Stack", "#stack"],
             ["Process", "#process"],
@@ -292,7 +291,7 @@ export default function Home() {
           <About />
           <Services />
           <FeaturedWork />
-          <TechnicalDeepDive />
+          <BusinessMetrics />
           <Lab />
           <TechStack />
           <Process />

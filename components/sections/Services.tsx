@@ -4,22 +4,28 @@ import { motion } from "framer-motion";
 
 const SERVICES = [
   {
-    title: "🏡 Real Estate Platforms",
+    title: "Ultra-Fast Loading Speeds",
     description:
-      "Advanced property listings, interactive maps, dynamic filtration engines, and clean lead-capture layouts built specifically for agents and agencies looking to dominate the market.",
-    outcome: "Best for: agencies that need more qualified property leads.",
+      "Sites that load under 2 seconds so you never lose a mobile customer.",
+    outcome: "Best for: local businesses that depend on mobile traffic.",
   },
   {
-    title: "☕ E-Commerce & F&B Solutions",
+    title: "Automated Business Systems",
     description:
-      "Sleek, lightning-fast digital menus, ordering workflows, and beautiful gallery showcases designed to turn online visitors into paying customers for cafes and restaurants.",
-    outcome: "Best for: cafes and restaurants focused on online orders.",
+      "Connect your website directly to your Telegram, WhatsApp, or POS system.",
+    outcome: "Best for: teams that want fewer manual follow-ups.",
   },
   {
-    title: "🛠️ Custom Web Apps & Audits",
+    title: "Google Maps & Search Visibility",
     description:
-      "Comprehensive code inspection, bug crushing, database speed optimization, and performance tuning to ensure your software works flawlessly under heavy user traffic.",
-    outcome: "Best for: teams with slow, unstable, or outdated software.",
+      "Get your business found easily by local customers on Google.",
+    outcome: "Best for: owners who want more nearby customer discovery.",
+  },
+  {
+    title: "Website Rescue & Bug Fixing",
+    description:
+      "Is your current website slow, broken on mobile, or glitching? I offer 24-hour emergency support to patch your bugs and get your business back online fast.",
+    outcome: "Best for: urgent fixes that cannot wait.",
   },
 ];
 

@@ -6,7 +6,11 @@ import { motion, useScroll, useTransform } from "framer-motion";
 // ─── Animated cursor-tracking glow (subtle) ────────────────────────────────────
 // Removed for simplicity — the CinematicBackground handles all ambient light.
 
-const ROLES = ["Business Websites", "Local Growth Systems", "Premium UX"];
+const ROLES = [
+  "Senior Web & App Developer",
+  "Business Websites",
+  "Local Growth Systems",
+];
 
 function AnimatedRoles() {
   return (
