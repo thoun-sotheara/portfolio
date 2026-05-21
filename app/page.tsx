@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { CinematicBackground } from "@/components/ui/CinematicBackground";
 import { Hero } from "@/components/sections/Hero";
 import { About } from "@/components/sections/About";
+import { Services } from "@/components/sections/Services";
 import { FeaturedWork } from "@/components/sections/FeaturedWork";
 import { TechnicalDeepDive } from "@/components/sections/TechnicalDeepDive";
 import { Lab } from "@/components/sections/Lab";
@@ -94,6 +95,7 @@ function Nav() {
         <nav className="hidden items-center gap-1 sm:flex">
           {[
             ["About", "#about"],
+            ["Services", "#services"],
             ["Work", "#work"],
             ["Deep Dive", "#deep-dive"],
             ["Lab", "#lab"],
@@ -148,11 +150,11 @@ function Footer() {
         {/* Left: Message */}
         <div className="flex flex-col gap-4">
           <h2 className="text-4xl font-semibold tracking-tight text-ink-primary lg:text-5xl">
-            Have a problem to solve?
+            Ready to scale your business online?
           </h2>
           <p className="max-w-md text-base leading-relaxed text-ink-secondary">
-            I&apos;m currently available for full-time roles and select
-            freelance projects. Let&apos;s talk about what you&apos;re building.
+            I help real estate, cafes, restaurants, and local businesses launch
+            fast websites that convert visitors into customers.
           </p>
         </div>
 
@@ -164,6 +166,20 @@ function Footer() {
           transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
           className="flex flex-col gap-6"
         >
+          <div className="rounded-2xl border border-sky-400/30 bg-gradient-to-r from-sky-500/30 to-blue-600/30 p-4">
+            <p className="label-text text-sky-100">
+              Need a fast response? Let&apos;s talk directly on Telegram.
+            </p>
+            <a
+              href="https://t.me/sotheara_thoun"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-3 inline-flex h-11 items-center gap-2 rounded-full bg-sky-500 px-5 text-sm font-semibold text-white transition-colors duration-200 hover:bg-sky-400"
+            >
+              <span aria-hidden="true">✈</span>
+              <span>💬 Chat Instantly on Telegram</span>
+            </a>
+          </div>
           <ContactForm />
         </motion.div>
       </div>
@@ -257,6 +273,7 @@ export default function Home() {
         <main>
           <Hero />
           <About />
+          <Services />
           <FeaturedWork />
           <TechnicalDeepDive />
           <Lab />

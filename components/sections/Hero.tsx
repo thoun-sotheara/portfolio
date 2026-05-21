@@ -2,12 +2,11 @@
 
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { PORTFOLIO } from "@/lib/portfolio-data";
 
 // ─── Animated cursor-tracking glow (subtle) ────────────────────────────────────
 // Removed for simplicity — the CinematicBackground handles all ambient light.
 
-const ROLES = ["Full-stack Developer", "Frontend Architect", "UI/UX Engineer"];
+const ROLES = ["Business Websites", "Local Growth Systems", "Premium UX"];
 
 function AnimatedRoles() {
   return (
@@ -60,8 +59,6 @@ export function Hero() {
     target: containerRef,
     offset: ["start start", "end start"],
   });
-  const resumeHref = PORTFOLIO.resumeUrl || `mailto:${PORTFOLIO.email}?subject=Request%20Resume`;
-  const resumeLabel = PORTFOLIO.resumeUrl ? "Download Resume" : "Request Resume";
 
   // Parallax the headline upward as user scrolls
   const headlineY = useTransform(scrollYProgress, [0, 1], ["0%", "-18%"]);
@@ -86,7 +83,7 @@ export function Hero() {
         >
           <div className="h-px w-10 bg-accent opacity-60" />
           <span className="label-text text-accent/70">
-            Available for full-time and freelance work
+            Helping local businesses scale with better digital products
           </span>
         </motion.div>
 
@@ -98,10 +95,10 @@ export function Hero() {
           className="text-5xl font-semibold leading-[1.1] tracking-tight sm:text-6xl lg:text-7xl xl:text-8xl"
         >
           <span className="text-gradient block">
-            I build interfaces
+            We Build High-Performance
           </span>
           <span className="text-gradient block">
-            that ship solutions.
+            Websites That Scale Your Business.
           </span>
         </motion.h1>
 
@@ -112,12 +109,10 @@ export function Hero() {
           transition={{ delay: 0.35, duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
           className="max-w-2xl text-balance text-lg leading-relaxed text-ink-secondary lg:text-xl"
         >
-          Full-stack engineer specializing in{" "}
-          <span className="text-ink-primary">SaaS</span> and{" "}
-          <span className="text-ink-primary">E-commerce</span> platforms.
-          I design and ship critical product surfaces end-to-end, from frontend
-          architecture to the underlying data flows, so each interaction is fast,
-          reliable, and intentional.
+          Hi, I&apos;m Sotheara, Founder of Analite Solution. With 6+ years of
+          experience, I transform corporate concepts and local businesses into
+          lightning-fast digital products. Clean code, premium design,
+          delivered fast.
         </motion.p>
 
         <AnimatedRoles />
@@ -130,21 +125,19 @@ export function Hero() {
           className="flex flex-wrap items-center gap-4"
         >
           <a
-            href="#work"
+            href="#contact"
             className="group relative inline-flex h-12 items-center gap-2 overflow-hidden rounded-full bg-accent px-7 text-sm font-semibold text-white transition-all duration-300 hover:shadow-[0_0_40px_rgba(124,110,224,0.5)]"
           >
-            <span className="relative z-10">View Case Studies</span>
+            <span className="relative z-10">Get Free Consultation</span>
             {/* Hover shimmer */}
             <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/10 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
           </a>
 
           <a
-            href={resumeHref}
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#services"
             className="inline-flex h-12 items-center gap-2 rounded-full border border-white/[0.1] bg-white/[0.03] px-7 text-sm font-semibold text-ink-secondary transition-all duration-300 hover:border-white/[0.18] hover:text-ink-primary"
           >
-            {resumeLabel}
+            View Services
           </a>
         </motion.div>
       </motion.div>

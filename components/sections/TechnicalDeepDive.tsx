@@ -191,12 +191,12 @@ export function TechnicalDeepDive() {
           <div className="h-px flex-1 bg-gradient-to-r from-white/[0.08] to-transparent" />
         </div>
         <h2 className="text-4xl font-semibold tracking-tight text-ink-primary lg:text-5xl">
-          60fps under heavy load.
+          The Architecture Behind the Speed
         </h2>
         <p className="max-w-xl text-base leading-relaxed text-ink-secondary">
-          How I maintain frame-perfect performance while orchestrating real-time
-          data streams, state mutations, and complex UI interactions. The
-          invisible architecture that makes it all feel effortless.
+          We write highly optimized, clean code so your business website loads
+          in under 1 second. Fast loading means better Google SEO and zero lost
+          customers on mobile devices.
         </p>
       </motion.div>
 
