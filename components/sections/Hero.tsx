@@ -83,7 +83,7 @@ export function Hero() {
         >
           <div className="h-px w-10 bg-accent opacity-60" />
           <span className="label-text text-accent/70">
-            Helping local businesses scale with better digital products
+            Built for Cambodia local businesses ready to grow online
           </span>
         </motion.div>
 
@@ -112,10 +112,20 @@ export function Hero() {
           Hi, I&apos;m Sotheara, Founder of Analite Solution. With 6+ years of
           experience, I transform corporate concepts and local businesses into
           lightning-fast digital products. Clean code, premium design,
-          delivered fast.
+          delivered fast, and built to convert more customers.
         </motion.p>
 
         <AnimatedRoles />
+
+        <motion.p
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.48, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+          className="max-w-2xl text-sm leading-relaxed text-ink-tertiary"
+        >
+          Typical outcomes: faster loading websites, stronger Google visibility,
+          and clearer customer journeys that increase calls and bookings.
+        </motion.p>
 
         {/* CTA row */}
         <motion.div

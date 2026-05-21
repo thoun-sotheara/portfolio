@@ -117,7 +117,7 @@ function Nav() {
           href="#contact"
           className="inline-flex h-9 items-center gap-2 rounded-full border border-white/[0.1] bg-white/[0.04] px-5 text-sm font-medium text-ink-secondary transition-all duration-200 hover:border-accent/40 hover:bg-accent/10 hover:text-accent"
         >
-          Let&apos;s talk
+          Free Consult
         </a>
       </div>
     </header>
@@ -156,6 +156,20 @@ function Footer() {
             I help real estate, cafes, restaurants, and local businesses launch
             fast websites that convert visitors into customers.
           </p>
+          <div className="flex flex-wrap gap-2 pt-2">
+            {[
+              "Free discovery call",
+              "Clear timeline",
+              "Mobile-first delivery",
+            ].map((item) => (
+              <span
+                key={item}
+                className="rounded-full border border-white/[0.1] bg-white/[0.03] px-3 py-1 text-xs text-ink-tertiary"
+              >
+                {item}
+              </span>
+            ))}
+          </div>
         </div>
 
         {/* Right: Contact form */}
@@ -179,6 +193,9 @@ function Footer() {
               <span aria-hidden="true">✈</span>
               <span>💬 Chat Instantly on Telegram</span>
             </a>
+            <p className="mt-2 text-xs text-sky-100/90">
+              Fastest support channel for project quotes and urgent fixes.
+            </p>
           </div>
           <ContactForm />
         </motion.div>

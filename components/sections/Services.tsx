@@ -7,16 +7,19 @@ const SERVICES = [
     title: "🏡 Real Estate Platforms",
     description:
       "Advanced property listings, interactive maps, dynamic filtration engines, and clean lead-capture layouts built specifically for agents and agencies looking to dominate the market.",
+    outcome: "Best for: agencies that need more qualified property leads.",
   },
   {
     title: "☕ E-Commerce & F&B Solutions",
     description:
       "Sleek, lightning-fast digital menus, ordering workflows, and beautiful gallery showcases designed to turn online visitors into paying customers for cafes and restaurants.",
+    outcome: "Best for: cafes and restaurants focused on online orders.",
   },
   {
     title: "🛠️ Custom Web Apps & Audits",
     description:
       "Comprehensive code inspection, bug crushing, database speed optimization, and performance tuning to ensure your software works flawlessly under heavy user traffic.",
+    outcome: "Best for: teams with slow, unstable, or outdated software.",
   },
 ];
 
@@ -44,6 +47,10 @@ export function Services() {
           Premium digital systems engineered to convert more customers, run faster,
           and scale your operations with confidence.
         </p>
+        <p className="max-w-2xl text-sm leading-relaxed text-ink-tertiary">
+          Every project is delivery-focused: clear timeline, measurable KPI targets,
+          and handover-ready code your team can maintain.
+        </p>
       </motion.div>
 
       <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
@@ -67,6 +74,7 @@ export function Services() {
             <p className="mt-3 text-sm leading-7 text-ink-secondary">
               {service.description}
             </p>
+            <p className="mt-3 text-xs text-ink-tertiary">{service.outcome}</p>
           </motion.article>
         ))}
       </div>
